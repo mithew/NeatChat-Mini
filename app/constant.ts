@@ -1,5 +1,5 @@
-export const OWNER = "tianzhentech";
-export const REPO = "NeatChat";
+export const OWNER = "T";
+export const REPO = "Neat";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const PLUGINS_REPO_URL = `https://github.com/${OWNER}/NeatChat-Awesome-Plugins`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
@@ -293,27 +293,7 @@ export const DEFAULT_TTS_VOICES = [
 
 const openaiModels = [
   "gpt-3.5-turbo",
-  "gpt-3.5-turbo-1106",
-  "gpt-3.5-turbo-0125",
-  "gpt-4",
-  "gpt-4-0613",
-  "gpt-4-32k",
-  "gpt-4-32k-0613",
-  "gpt-4-turbo",
-  "gpt-4-turbo-preview",
   "gpt-4o",
-  "gpt-4o-2024-05-13",
-  "gpt-4o-2024-08-06",
-  "gpt-4o-2024-11-20",
-  "chatgpt-4o-latest",
-  "gpt-4o-mini",
-  "gpt-4o-mini-2024-07-18",
-  "gpt-4-vision-preview",
-  "gpt-4-turbo-2024-04-09",
-  "gpt-4-1106-preview",
-  "dall-e-3",
-  "o1-mini",
-  "o1-preview",
 ];
 
 const googleModels = [
@@ -418,127 +398,6 @@ export const DEFAULT_MODELS = [
       providerName: "OpenAI",
       providerType: "openai",
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
-    },
-  })),
-  ...openaiModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "azure",
-      providerName: "Azure",
-      providerType: "azure",
-      sorted: 2,
-    },
-  })),
-  ...googleModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
-      sorted: 3,
-    },
-  })),
-  ...anthropicModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-      sorted: 4,
-    },
-  })),
-  ...baiduModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "baidu",
-      providerName: "Baidu",
-      providerType: "baidu",
-      sorted: 5,
-    },
-  })),
-  ...bytedanceModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "bytedance",
-      providerName: "ByteDance",
-      providerType: "bytedance",
-      sorted: 6,
-    },
-  })),
-  ...alibabaModes.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "alibaba",
-      providerName: "Alibaba",
-      providerType: "alibaba",
-      sorted: 7,
-    },
-  })),
-  ...tencentModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "tencent",
-      providerName: "Tencent",
-      providerType: "tencent",
-      sorted: 8,
-    },
-  })),
-  ...moonshotModes.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "moonshot",
-      providerName: "Moonshot",
-      providerType: "moonshot",
-      sorted: 9,
-    },
-  })),
-  ...iflytekModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "iflytek",
-      providerName: "Iflytek",
-      providerType: "iflytek",
-      sorted: 10,
-    },
-  })),
-  ...xAIModes.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "xai",
-      providerName: "XAI",
-      providerType: "xai",
-      sorted: 11,
-    },
-  })),
-  ...chatglmModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "chatglm",
-      providerName: "ChatGLM",
-      providerType: "chatglm",
-      sorted: 12,
     },
   })),
 ] as const;
