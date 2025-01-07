@@ -48,7 +48,7 @@ export const DEFAULT_CONFIG = {
   theme: Theme.Auto as Theme,
   tightBorder: !!config?.isApp,
   sendPreviewBubble: false,
-  enableAutoGenerateTitle: true,
+  enableAutoGenerateTitle: false,
   sidebarWidth: DEFAULT_SIDEBAR_WIDTH,
 
   enableArtifacts: true, // show artifacts config
